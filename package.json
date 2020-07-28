@@ -1,0 +1,28 @@
+{
+  "name": "roy-helper",
+  "version": "1.0.0",
+  "description": "ROY Leader School",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon start index.js",
+    "stop": "nodemon stop index.js",
+    "deploy": "git add -A && git commit -m \"Update\" && git push heroku master && heroku logs --tail --dyno=web"
+  },
+  "author": "Anton Elyshev",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.2.0",
+    "micro-bot": "^2.5.3",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.9",
+    "node-vk-bot-api": "^3.3.3",
+    "telegraf": "^3.37.0",
+    "telegraf-anycase-commands": "^1.1.0",
+    "telegraf-inline-menu": "^4.0.0",
+    "telegraf-session-mongodb": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
